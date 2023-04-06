@@ -95,7 +95,7 @@ export default function Home() {
           </div>
           </StyledLink>
         
-        <StyledLink href="/aboutus" underlineHoverColor="red">
+        <StyledLink href="/about" underlineHoverColor="red">
           <div
             className={styles.card}
             rel="noopener noreferrer"
@@ -108,7 +108,7 @@ export default function Home() {
             </p>
           </div>
           </StyledLink>  
-          <StyledLink href="/contactus" underlineHoverColor="red">
+          <StyledLink href="/contact" underlineHoverColor="red">
           <div
             className={styles.card}
             rel="noopener noreferrer"
