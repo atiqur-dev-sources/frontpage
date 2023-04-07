@@ -7,6 +7,7 @@ import StyledLink from '@/components/StyleComponents/StyledLink'
 import CurrentDate from '@/components/StyleComponents/CuttentDate'
 import ImageText from '@/components/StyleComponents/ImageText'
 import BodySection from '@/components/indexpagelayout/BodySection'
+import LoginButton from '@/components/StyleComponents/LogInButton/LogInButton'
 
 
 
@@ -74,7 +75,9 @@ export default function Home() {
         </div>
        
        <BodySection>
-          <Button onClick={handleLogInClick} color="primary" variant="outlined">LogIn to Applications</Button>       
+           <br/>
+           <LoginButton />
+           <br/>
        </BodySection>
 
         {/* */}

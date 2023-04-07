@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .textContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .text {
+    white-space: nowrap;
+  }
+  
+  .blinkCursor {
+    width: 10px;
+    height: 20px;
+    margin-left: 5px;
+    background-color: black;
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
