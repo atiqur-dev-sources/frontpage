@@ -8,14 +8,16 @@ import CurrentDate from '@/components/StyleComponents/CuttentDate'
 import ImageText from '@/components/StyleComponents/ImageText'
 import BodySection from '@/components/indexpagelayout/BodySection'
 import LoginButton from '@/components/StyleComponents/LogInButton/LogInButton'
-
+import { useRouter } from "next/router";
 
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const handleLogInClick=()=>{
-
+  const router = useRouter();
+  const moveToLoginPage=(e: React.MouseEvent<HTMLButtonElement>)=>{
+    e.preventDefault();
+    router.push("/login");
   }
   return (
     <>
@@ -76,7 +78,7 @@ export default function Home() {
        
        <BodySection>
            <br/>
-           <LoginButton />
+           <LoginButton onClickEvent={moveToLoginPage} />
            <br/>
        </BodySection>
 

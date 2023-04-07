@@ -1,7 +1,8 @@
 import React from "react";
-import { Button } from "@mui/material";
+import { Button,ButtonProps } from "@mui/material";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import { styled } from "@mui/material/styles";
+
 
 const StyledButton = styled(Button)({
   minWidth: "200px",
@@ -10,10 +11,19 @@ const StyledButton = styled(Button)({
     outline: "none",
   },
 });
+interface MyButtonProps extends ButtonProps {
+    onClickEvent?: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  }
 
-const LoginButton = () => {
+
+const LoginButton: React.FC<MyButtonProps>  = ({ onClickEvent, ...rest }) => {
+    const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+        if (onClickEvent) {
+          onClickEvent(e);
+        }
+      };
   return (
-    <StyledButton variant="contained" autoFocus  startIcon={<LockOutlinedIcon />}>
+    <StyledButton variant="contained" autoFocus onClick={handleClick} startIcon={<LockOutlinedIcon />}>
       LogIn to Apps
     </StyledButton>
   );
