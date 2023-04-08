@@ -19,7 +19,7 @@ const ImageText: React.FC<ImageTextProps> = ({
   };
 
   const imageStyle = {
-    maxWidth: '30%',
+    maxWidth: '20%',
     height: 'auto',
     marginRight: '1rem',
   };
