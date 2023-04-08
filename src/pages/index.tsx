@@ -48,38 +48,12 @@ export default function Home() {
          
         </div>
 
-        <div className={styles.description}>
-        <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-              
-            >
-              Powered By : <span style={{'color':'crimson', fontWeight:'Bold',fontSize:'1.5rem'}}>IT, City Group</span>
-            </a>
-          </div>
-          {/* <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          /> */}
-          {/* <div className={styles.thirteen}>
-            <p>Welcome to City group Apps</p>
-            
-          </div> */}
-          {/*  */}
 
-          
-        </div>
        
        <BodySection>
-           <br/>
+           
            <LoginButton onClickEvent={moveToLoginPage} />
-           <br/>
+          
        </BodySection>
 
         {/* */}
@@ -141,6 +115,32 @@ export default function Home() {
               with&nbsp;Vercel.
             </p>
           </a> */}
+        </div>
+        <div className={styles.description}>
+        <div>
+            <a
+              href="/contact"
+              rel="noopener noreferrer"
+              
+            >
+              Powered By : <span style={{'color':'crimson', fontWeight:'Bold',fontSize:'1.5rem'}}>IT, City Group</span>
+            </a>
+          </div>
+          {/* <Image
+            className={styles.logo}
+            src="/next.svg"
+            alt="Next.js Logo"
+            width={180}
+            height={37}
+            priority
+          /> */}
+          {/* <div className={styles.thirteen}>
+            <p>Welcome to City group Apps</p>
+            
+          </div> */}
+          {/*  */}
+
+          
         </div>
       </main>
     </>
