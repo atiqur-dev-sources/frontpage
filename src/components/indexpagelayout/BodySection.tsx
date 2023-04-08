@@ -6,7 +6,7 @@ const BodySection: React.FC<{ children: ReactNode }> = ({ children }) => {
   return (
     <>
      { children }
-        <div><AnimatedText slogans={slogans} /></div>
+        <div style={{fontWeight:'bold'}}><AnimatedText slogans={slogans} /></div>
      
     </>
    
